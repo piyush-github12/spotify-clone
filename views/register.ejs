@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins";
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    #main{
+      width: 100vw;
+      height: 100vh;
+      background: #121313;
+    }
+    #form-bg{
+      width: 400px;
+      border-radius: 30px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+      
+    }
+    form{
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+    }
+    input , button {
+      width: 80%;
+      border: 2px solid black;
+      border-radius: 50px;
+      height: 50px;
+      padding: 0px 20px;
+    }
+    img{
+      width: 300px;
+      object-fit: cover;
+    }
+    button{
+      cursor: pointer;
+      background-color: #1fd660;
+    }
+    a{
+     color: white; 
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="form-bg">
+      <form action="/register" method="post">
+        <img src="/images/5ece500f123d6d0004ce5f8a.png" alt="">
+        <input type="text" name="username" placeholder="Uername">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="password" name="password" placeholder="Password">
+        <button>Sign-Up</button>
+        <h4>or</h4>
+        <a href="/login">Log-In</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
